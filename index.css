@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Montserrat:wght@300;400;500;600&family=Noto+Sans&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  background: #121321;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section::before {
+  content: "";
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  transform: translate(-150px, -100px);
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #121321, #8287da);
+}
+
+section::after {
+  content: "";
+  width: 240px;
+  height: 240px;
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(150px, 100px);
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #9c27be, #f3f5f4);
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 275px;
+  z-index: 100;
+}
+
+.container .card {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 25px;
+  backdrop-filter: blur(25px);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.front-face header,
+.front-face .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .chip {
+  width: 78px;
+  height: 60px;
+}
+
+.front-face header {
+  justify-content: space-between;
+}
+
+.front-face .logo img {
+  width: 128px;
+  height: 60px;
+  margin-right: -25px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.front-face .card-details {
+  display: flex;
+  color: #fff;
+  align-items: flex-end;
+  margin-top: 70px;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+h5.number {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.name-number .name {
+  margin-top: 20px;
+}
+
+.valid-date .date {
+  font-size: 16px;
+  font-weight: 400;
+}
